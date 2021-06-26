@@ -255,7 +255,7 @@ export default function AboutContent() {
         </div>
       </div>
       <div className="copyright">
-        Designed & Built with love ❤️ by <br /> Aditya K. © 2021
+        Designed & Built with love ❤️ by <br /> Aditya & Vaidehi © 2021
       </div>
     </styled.About>
   );

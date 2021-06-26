@@ -147,12 +147,12 @@ export default function Grid({ gridState, setGridState }) {
           initial="hidden"
           variants={gridVariants.gridItem7}
         >
-          <Image
+          {/*  <Image
             src="/images/grid/griddy.jpg"
             alt="griddy"
             layout="fill"
             objectFit="cover"
-          /> 
+          /> */}
           <styled.GridOverLay />
         </styled.GridItemBg>
         <Link href="#" passHref>
@@ -191,22 +191,22 @@ export default function Grid({ gridState, setGridState }) {
         </Link>
       </styled.GridItem>
       <styled.GridItem>
-        <styled.GridItemBg
+       <styled.GridItemBg
           pos={9}
           gridState={gridState}
           animate={controls}
           initial="hidden"
           variants={gridVariants.gridItem9}
         >
-          <Image
+          {/* <Image
             src="/images/grid/hotflix.jpg"
             alt="hotflix"
             layout="fill"
             objectFit="cover"
-          />
-          <styled.GridOverLay />
+        />
+          <styled.GridOverLay />*/}
         </styled.GridItemBg>
-        <Link href="/project/portfolio" passHref>
+        <Link href="" passHref>
           <a className="grid__link grid__item-content">
             <styled.GridItemInner
               onClick={() => setGridState('close')}

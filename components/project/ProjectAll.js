@@ -73,7 +73,7 @@ export default function ProjectAll() {
               </div>
             </div>
           </styled.ProjectContent>
-          <styled.ProjectImage>
+        {/*  <styled.ProjectImage>
             <div>
               <Image
                 src="/images/hotflix/hotflix-bg.jpg"
@@ -82,7 +82,7 @@ export default function ProjectAll() {
                 objectFit="cover"
               />
             </div>
-          </styled.ProjectImage>
+          </styled.ProjectImage>*/}
         </styled.FeaturedProject>
       </styled.ProjectsContainer>
 
@@ -153,7 +153,7 @@ export default function ProjectAll() {
               </div>
             </div>
           </styled.ProjectContent>
-          <styled.ProjectImage>
+         {/* <styled.ProjectImage>
             <div>
               <Image
                 src="/images/grid/griddy.jpg"
@@ -161,8 +161,8 @@ export default function ProjectAll() {
                 layout="fill"
                 objectFit="cover"
               />
-            </div>
-          </styled.ProjectImage>
+             </div>
+          </styled.ProjectImage>*/}
         </styled.FeaturedProject>
       </styled.ProjectsContainer>
 
