@@ -89,7 +89,7 @@ export default function ChatBot({ setChatBotState, chatBotState }) {
             <p>
               Have a look at my
               <a
-                href="https://drive.google.com/file/d/"
+                href=""
                 className="link-btn"
               >
                 Resume💾
