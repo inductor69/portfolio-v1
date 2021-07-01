@@ -27,10 +27,10 @@ export const Description = styled(motion.div)`
   }
 
   p {
-    font-size: clamp(1.6rem, 1.8vw, 1.75rem);
+    font-size: clamp(1.9rem, 1.8vw, 1.75rem);
     color: ${({ theme }) => theme.grey};
     margin-top: 2.2rem;
-    line-height: 1.7;
+    line-height: 1.5;
     span {
       display: block;
       margin-top: 1rem;
@@ -49,7 +49,7 @@ export const NavLink = styled.a`
   color: ${({ theme }) => theme.secondary};
   transition: all 0.2s ease-in-out;
   border-radius: 0.5rem;
-  border: 2px solid white;
+  border: 2px solid ${({ theme }) => theme.secondary};
   padding: 1.2rem 2rem;
   font-size: 1.5rem;
   display: inline-block;

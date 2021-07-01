@@ -17,7 +17,7 @@ export default function Hero() {
         animate="visible"
       >
         <h1>
-          Hi. I'm Aditya K. <span>A full-stack developer.</span>
+          Hi! I'm Aditya K. <span>A full-stack developer.</span>
         </h1>
         <p>
           I love spending hours and hours building things, resolving problems,

@@ -5,7 +5,7 @@ import ThemeToggler from './ThemeToggler';
 import { useViewport } from 'hooks/useViewport';
 
 import { useRouter } from 'next/router';
-
+import Sparkles from '../../home/sparkle';
 export default function Navbar({
   themeToggler,
   theme,
@@ -31,22 +31,22 @@ export default function Navbar({
           onClick={() => width > 900 && isHome && setGridState('open')}
           className="project"
         >
-          <styled.NavLink href={projectUrl()} rotate="-2deg">
+         <Sparkles> <styled.NavLink href={projectUrl()} rotate="-2deg">
             <span>{isHome ? 'Project' : 'Home'}</span>
-          </styled.NavLink>
+          </styled.NavLink></Sparkles>
         </styled.LinkWrapper>
         <styled.LinkWrapper>
-          <styled.NavLink href="/about" rotate="1deg">
+        <Sparkles><styled.NavLink href="/about" rotate="1deg">
             <span>About</span>
-          </styled.NavLink>
+          </styled.NavLink></Sparkles>
         </styled.LinkWrapper>
         <styled.LinkWrapper
           onClick={() => setChatBotState('open')}
           className="contact"
-        >
+        ><Sparkles>
           <styled.NavLink href="#" rotate="1deg">
             <span>Contact</span>
-          </styled.NavLink>
+          </styled.NavLink></Sparkles>
         </styled.LinkWrapper>
         <styled.LinkWrapper className="logo">
           <styled.NavLink href="/">

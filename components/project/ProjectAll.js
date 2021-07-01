@@ -2,6 +2,7 @@ import * as styled from './styles';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import Sparkles from '../home/sparkle';
 
 export default function ProjectAll() {
   return (
@@ -13,7 +14,7 @@ export default function ProjectAll() {
             <div>
               <p className="project-overline">Featured Project</p>
               <h3 className="project-title">
-                <Link href="/project/portfolio">Portfolio</Link>
+                <Link href="/project/portfolio"><Sparkles>Portfolio</Sparkles></Link>
               </h3>
               <div className="project-description">
                 <p>
@@ -27,7 +28,7 @@ export default function ProjectAll() {
               </ul>
               <div className="project-links">
                 <a
-                  href="https://github.com/Halmesn/Hotflix"
+                  href="https://github.com/"
                   aria-label="GitHub Link"
                   target="_blank"
                 >
@@ -47,7 +48,7 @@ export default function ProjectAll() {
                   </svg>
                 </a>
                 <a
-                  href="https://hotflix-movie.vercel.app/"
+                  href=""
                   aria-label="External Link"
                   className="external"
                   rel="noopener noreferrer"
@@ -127,7 +128,7 @@ export default function ProjectAll() {
                   </svg>
                 </a>
                 <a
-                  href="https://griddy.vercel.app/"
+                  href=""
                   aria-label="External Link"
                   className="external"
                   rel="noopener noreferrer"

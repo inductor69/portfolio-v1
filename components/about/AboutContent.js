@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import { useViewport } from 'hooks/useViewport';
 import { useAnimation } from 'framer-motion';
 import Image from 'next/image';
+import Sparkles from '../home/sparkle';
 
 
 export default function AboutContent() {
@@ -47,7 +48,7 @@ export default function AboutContent() {
         <h2>About me</h2>
         <p>
           Hello! My name is Aditya, I'm a&nbsp;
-          <span className="line">self-taught</span> full-stack developer
+          <span className="line"><Sparkles>self-taught</Sparkles></span> full-stack developer
           <br></br>I’m an undergrad at IIT-D and I'm Interested in Full-Stack development.
         </p>
         <span
@@ -88,7 +89,7 @@ export default function AboutContent() {
               hidden: { opacity: 0, y: 0 },
             }}
           >
-            I'm the one you'd like to work with
+          <Sparkles>  I'm the one you'd like to work with</Sparkles> 
           </styled.Title>
           <styled.Description
             animate={controls}
@@ -117,7 +118,7 @@ export default function AboutContent() {
               hidden: { opacity: 0, y: 0 },
             }}
           >
-            I like to dream more, learn more and become more.
+           <Sparkles> I like to dream more, learn more and become more.</Sparkles> 
           </styled.Title>
           <styled.Description
             animate={controls}
@@ -206,8 +207,10 @@ export default function AboutContent() {
               visible3: { opacity: 1, y: -50 },
               hidden: { opacity: 0, y: 0 },
             }}
-          >
-            I'm always open to job opportunities and new connections.
+          ><p>
+          I'm always open to <Sparkles> job opportunities</Sparkles> and new connections.
+        </p>
+             
           </styled.Title>
           <styled.Description
             animate={controls}
@@ -255,8 +258,9 @@ export default function AboutContent() {
         </div>
       </div>
       <div className="copyright">
-        Designed & Built with love ❤️ by <br /> Aditya & Vaidehi © 2021
+         Built with love ❤️ by <br /> Aditya © 2021
       </div>
     </styled.About>
   );
 }
+

@@ -56,6 +56,8 @@ export const SubTitle = styled.h2`
 
 export const Description = styled.p`
   font-size: 1.8rem;
+  font-weight: 100;
+
   line-height: 1.8;
   max-width: 80rem;
   color: ${({ theme }) => theme.grey};
@@ -89,7 +91,8 @@ export const Table = styled.table`
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2;
-    padding-bottom: 2rem;
+    padding-bottom: 1.3rem;
+    padding-top: 2rem;
   }
 
   td {

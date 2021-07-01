@@ -4,7 +4,6 @@ export const ProjectAll = styled.section`
   margin: 0 auto;
   padding: 15rem 5rem;
   max-width: 100rem;
-
   @media (max-width: 30em) {
     padding: 10rem 2.5rem;
   }
@@ -26,6 +25,8 @@ export const Heading = styled.h2`
 export const ProjectsContainer = styled.ul`
   list-style: none;
   margin-bottom: 6rem;
+  border-radius: 0.5rem;
+  border: 2px solid ${({ theme }) => theme.secondary};
 `;
 
 export const FeaturedProject = styled.li`
@@ -34,6 +35,7 @@ export const FeaturedProject = styled.li`
   gap: 1rem;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
+  
 `;
 
 export const ProjectContent = styled.div`
@@ -52,11 +54,11 @@ export const ProjectContent = styled.div`
     padding: 3rem 2.5rem 2rem;
   }
 
-  color: ${({ theme }) => theme.projectText};
+  color: ${({ theme }) => theme.secondary};
 
   .project-overline {
     margin: 1rem 0px;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: 400;
   }
 
@@ -76,7 +78,7 @@ export const ProjectContent = styled.div`
     border-radius: 4px;
     background: ${({ theme }) => theme.aboutLine};
     color: ${({ theme }) => theme.secondary};
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 
   .project-tech-list {
@@ -88,7 +90,7 @@ export const ProjectContent = styled.div`
     padding: 0px;
     list-style: none;
     justify-content: flex-end;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
     li {
       margin: 0px 0px 5px 20px;
@@ -113,8 +115,8 @@ export const ProjectContent = styled.div`
       padding: 10px;
 
       svg {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
       }
     }
   }

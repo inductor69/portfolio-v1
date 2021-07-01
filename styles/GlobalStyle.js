@@ -21,7 +21,7 @@ html {
 
 body {
   background-color: ${({ theme }) => theme.primary};
-  font-family: 'Biotif', Helvetica, Arial, sans-serif;;
+  font-family: 'Biotif';
   transition: all .5s linear;
 }
 
@@ -40,7 +40,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bogart', Helvetica, Arial, sans-serif;
+  font-family: 'Bogart';
   font-weight: 200;
 }
 
@@ -50,7 +50,7 @@ h6,
 input,
 li,
 p {
-  font-family: 'Biotif', Helvetica, Arial, sans-serif;
+  font-family: 'Biotif';
 }
 
 ::selection {
