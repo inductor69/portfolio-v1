@@ -11,20 +11,27 @@ export default function Hero() {
 
   return (
     <styled.Hero>
+       <styled.Home>
+
+
+      </styled.Home>
       <styled.Description
         variants={styled.descriptionVariants}
         initial="hidden"
         animate="visible"
       >
-        <h1>
-          Hi! I'm Aditya K. <span>A full-stack developer.</span>
+        <h1 >
+          Hi! 
         </h1>
+        <h1>I'm Aditya K.</h1>
+        <h1> <span> A full-stack developer.</span></h1>
         <p>
           I love spending hours and hours building things, resolving problems,
           and learning new technologies.
           <span>Programming makes me a happy man😄</span>
         </p>
       </styled.Description>
+     
       {width < 850 && (
         <styled.LinkWrapper>
           <styled.NavLink href="https://github.com/inductor69">

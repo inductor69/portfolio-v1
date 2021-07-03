@@ -108,8 +108,8 @@ export const NavLink = styled(StyledLink)`
 `;
 
 export const Logo = styled.img`
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 5.5rem;
+  height: 5.5rem;
 
   :hover {
     animation-name: buzz;

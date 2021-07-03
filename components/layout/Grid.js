@@ -198,15 +198,15 @@ export default function Grid({ gridState, setGridState }) {
           initial="hidden"
           variants={gridVariants.gridItem9}
         >
-          {/* <Image
-            src="/images/grid/hotflix.jpg"
-            alt="hotflix"
+           <Image
+            src="v1624633658/about/tools.png"
+            alt="portfolio"
             layout="fill"
             objectFit="cover"
         />
-          <styled.GridOverLay />*/}
+          <styled.GridOverLay />
         </styled.GridItemBg>
-        <Link href="" passHref>
+        <Link href="/project/portfolio" passHref>
           <a className="grid__link grid__item-content">
             <styled.GridItemInner
               onClick={() => setGridState('close')}
@@ -214,8 +214,8 @@ export default function Grid({ gridState, setGridState }) {
               initial="hidden"
               variants={gridVariants.gridText}
             >
-              <h3 className="grid__item-title">project</h3>
-              <span className="grid__item-desc">Under Construction</span>
+              <h3 className="grid__item-title">Personal Portfolio</h3>
+              <span className="grid__item-desc">This is my personal portfolio</span>
             </styled.GridItemInner>
           </a>
         </Link>

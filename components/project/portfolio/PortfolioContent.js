@@ -1,7 +1,9 @@
 import * as styled from './styles';
-
+import { useEffect } from 'react';
 import Image from 'next/image';
-
+import Sparkles from 'components/home/sparkle';
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
 export default function PortfolioContent() {
   return (
     <styled.Portfolio>
@@ -32,7 +34,7 @@ export default function PortfolioContent() {
             </tr>
             <tr>
               <td>
-                <span className="arrow">▹</span>NextJs
+                <span className="arrow">▹</span>Next.js
               </td>
               <td>
                 <a href="https://github.com/">
@@ -50,24 +52,12 @@ export default function PortfolioContent() {
                 </a>
               </td>
             </tr>
-            <tr>
-              <td>
-                <span className="arrow">▹</span>MongoDB
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <span className="arrow">▹</span>Next-Auth
-              </td>
-              <td></td>
-            </tr>
           </tbody>
         </styled.Table>
       </styled.TextContainer>
       <styled.ImageContainer>
         <Image
-          src="/images/hotflix/hotflix.gif"
+          src="v1624633658/about/portfolio_ctjfdm.png"
           alt="hotflix demo"
           width={1266}
           height={720}
@@ -93,12 +83,14 @@ export default function PortfolioContent() {
       </styled.TextContainer>
       <styled.FlexContainer>
         <styled.ImageContainer>
+          <Sparkles>
           <Image
-            src="/images/hotflix/signup.gif"
-            alt="hotflix demo"
+            src="v1624633658/about/Removal-285_auto_x2_a5hcj0.png"
+            alt="portfolio demo"
             width={800}
             height={720}
           />
+          </Sparkles>
         </styled.ImageContainer>
         <styled.TextContainer>
           <styled.SubTitle className="web-stack">
@@ -132,12 +124,13 @@ export default function PortfolioContent() {
           I spent a days trying to figure out how to compile the images. I searched
           on Google, StackOverflow, tech blogs, and even Reddit but got nothing.{' '}
           <span>
-            Taking a simple example, let's say I am compiling a basic image `foo.jpg` to serverless production!
-            The image URL was changed from `/foo.jpg to` `/_next/image?url=%2Ffoo.jpg&w=750&q=75`.<br/>
-            `/_next/image` — this is an endpoint where the image will be sent for processing.<br/>
-            `?url=/foo.jpg` — where the endpoint should load the image from.<br/>
-            `&w=750` — resize the image to 750px wide.<br/>
-            `&q=75` — resample the image at 75% quality to reduce the file size.<br/>
+            Taking a simple example, let's say I am compiling a basic image <i>`foo.jpg`</i> to serverless production!
+            The image URL was changed from <i>`/foo.jpg to`</i> <i>`/_next/image?url=%2Ffoo.jpg&w=750&q=75`</i>.<br/>
+            
+            <i>`/_next/image`</i> — this is an endpoint where the image will be sent for processing.<br/>
+            <i>`?url=/foo.jpg`</i> — where the endpoint should load the image from.<br/>
+            <i>`&w=750`</i> — resize the image to 750px wide.<br/>
+            <i>`&q=75`</i> — resample the image at 75% quality to reduce the file size.<br/>
             This proxy URL is unique and thus can be cached, preventing redundant image optimizations. 
             The default loader relies on the Image Optimisation API, which is unavailable for exported-applications, 
             for Next.js tunes images on-demand, as users request them (not at build time).
@@ -153,14 +146,6 @@ Finally, I implemented the last option considering the webpage rendering speed!
             </span>
         </styled.Description>
       </styled.TextContainer>
-      <styled.ImageContainer>
-        <Image
-          src="/images/hotflix/card.gif"
-          alt="hotflix demo"
-          width={1266}
-          height={720}
-        />
-      </styled.ImageContainer>
       <styled.TextContainer>
         <styled.SubTitle>Lessons Learned</styled.SubTitle>
         <styled.Description>

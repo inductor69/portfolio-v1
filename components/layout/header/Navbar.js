@@ -53,7 +53,7 @@ export default function Navbar({
             <styled.Logo
               src={`${
                 theme === 'light'
-                  ? '/images/brand/logo_dark.svg'
+                  ? '/images/brand/logo_light.svg'
                   : '/images/brand/logo_dark.svg'
               }`}
               alt="logo"

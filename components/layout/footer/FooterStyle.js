@@ -18,7 +18,7 @@ export const GridButton = styled.button`
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   font-size: 1.9rem;
-  border: 2px solid white;
+  border: 2px solid ${({ theme }) => theme.secondary};
   cursor: pointer;
   color: ${({ theme }) => theme.secondary};
   margin-left: 3rem;

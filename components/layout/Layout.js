@@ -3,7 +3,6 @@ import { GlobalStyles } from 'styles/GlobalStyle';
 import { lightTheme, darkTheme } from 'styles/Themes';
 
 import Navbar from 'components/layout/header/Navbar';
-import { Birds } from 'components/home/Birds';
 import Footer from 'components/layout/footer/Footer';
 import Grid from 'components/layout/Grid';
 
@@ -26,7 +25,6 @@ export default function Layout({ children }) {
     <ChatBotContext.Provider value={{ setChatBotState, theme }}>
       <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
         <GlobalStyles />
-        {url === '/' ? <Birds theme={theme} /> : null}
         <header style={{ zIndex: 2 }}>
           <Navbar
             theme={theme}

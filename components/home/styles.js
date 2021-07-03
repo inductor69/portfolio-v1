@@ -37,6 +37,9 @@ export const Description = styled(motion.div)`
     }
   }
 `;
+export const Home= styled.div`
+
+`;
 
 export const LinkWrapper = styled.div`
   display: flex;

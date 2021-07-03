@@ -1,5 +1,4 @@
 import 'styles/font.css';
-
 import Layout from 'components/layout/Layout';
 import { ViewportProvider } from 'hooks/useViewport';
 
