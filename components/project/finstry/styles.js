@@ -101,10 +101,6 @@ export const Description = styled.p`
     }
   }
 }
-pre {
-  background: #eee;
-  padding-bottom: 2em;
-}
   font-size: 1.8rem;
   font-weight: 100;
 

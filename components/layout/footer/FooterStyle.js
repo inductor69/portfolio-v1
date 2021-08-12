@@ -14,7 +14,7 @@ export const GridButton = styled.button`
   font-size: 2rem;
   display: inline-block;
   background: none;
-  border: 0;
+  border: 0rem;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   font-size: 1.9rem;

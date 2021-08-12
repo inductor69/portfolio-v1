@@ -126,15 +126,16 @@ export default function Grid({ gridState, setGridState }) {
           initial="hidden"
           variants={gridVariants.gridItem6}
         ></styled.GridItemBg>
-        <Link href="#" passHref>
+        <Link href="/project/" passHref>
           <a className="grid__link grid__item-content">
             <styled.GridItemInner
+              onClick={() => setGridState('close')}
               animate={controls}
               initial="hidden"
               variants={gridVariants.gridText}
             >
-              <h3 className="grid__item-title">project</h3>
-              <span className="grid__item-desc">Under Construction</span>
+              <h3 className="grid__item-title">View All</h3>
+              <span className="grid__item-desc">Check more Projects</span>
             </styled.GridItemInner>
           </a>
         </Link>
@@ -147,12 +148,7 @@ export default function Grid({ gridState, setGridState }) {
           initial="hidden"
           variants={gridVariants.gridItem7}
         >
-          {/*  <Image
-            src="/images/grid/griddy.jpg"
-            alt="griddy"
-            layout="fill"
-            objectFit="cover"
-          /> */}
+          
           <styled.GridOverLay />
         </styled.GridItemBg>
         <Link href="#" passHref>
@@ -176,16 +172,25 @@ export default function Grid({ gridState, setGridState }) {
           animate={controls}
           initial="hidden"
           variants={gridVariants.gridItem8}
-        ></styled.GridItemBg>
-        <Link href="#" passHref>
+        >
+          {  <Image
+          src="v1624633658/about/finstry.png"
+          alt="Finstry"
+            layout="fill"
+            objectFit="cover"
+          /> }
+          <styled.GridOverLay />
+        </styled.GridItemBg>
+        <Link href="/project/finstry" passHref>
           <a className="grid__link grid__item-content">
             <styled.GridItemInner
+              onClick={() => setGridState('close')}
               animate={controls}
               initial="hidden"
               variants={gridVariants.gridText}
             >
-              <h3 className="grid__item-title">project</h3>
-              <span className="grid__item-desc">Under Construction</span>
+              <h3 className="grid__item-title">Finstry</h3>
+              <span className="grid__item-desc">Finance based newsletter MVP built with React, PixiJS and serving MailChimp API. </span>
             </styled.GridItemInner>
           </a>
         </Link>

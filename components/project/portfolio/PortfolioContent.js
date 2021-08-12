@@ -1,15 +1,23 @@
 import * as styled from './styles';
-import { useEffect } from 'react';
 import Image from 'next/image';
 import Sparkles from 'components/home/sparkle';
-import Prism from "prismjs";
-import "prismjs/themes/prism-tomorrow.css";
-export default function PortfolioContent() {
+import React from "react"
+
+
+class PortfolioContent extends React.Component  {
+  
+
+ 
+render(){
   return (
+    
     <styled.Portfolio>
+      
+      
       <styled.TextContainer>
         <styled.Title>Portfolio</styled.Title>
         <styled.Description>
+        
           The Portfolio is a production-ready, open-source portfolio of mine built with
           React, Next.js, and styled-component. It produces the
           experience of browsing smooth animations and minimal design by using reusable React hooks and
@@ -21,7 +29,7 @@ export default function PortfolioContent() {
             <tr>
               <th>Stack</th>
               <th>Live</th>
-            </tr>
+            </tr> 
             <tr>
               <td>
                 <span className="arrow">▹</span>React
@@ -57,7 +65,7 @@ export default function PortfolioContent() {
       </styled.TextContainer>
       <styled.ImageContainer>
         <Image
-          src="v1624633658/about/portfolio_ctjfdm.png"
+          src="v1624633658/about/portfolio_uxlgnh.png"
           alt="hotflix demo"
           width={1266}
           height={720}
@@ -119,10 +127,13 @@ export default function PortfolioContent() {
       <styled.TextContainer>
         <styled.SubTitle>Problems and Thought Process</styled.SubTitle>
         <styled.Description>
+
+     
           Like most projects, I ran into a few bumps along the way, one
           particularly difficult area was compiling the Serverless Framework.
           I spent a days trying to figure out how to compile the images. I searched
           on Google, StackOverflow, tech blogs, and even Reddit but got nothing.{' '}
+          
           <span>
             Taking a simple example, let's say I am compiling a basic image <i>`foo.jpg`</i> to serverless production!
             The image URL was changed from <i>`/foo.jpg to`</i> <i>`/_next/image?url=%2Ffoo.jpg&w=750&q=75`</i>.<br/>
@@ -145,6 +156,7 @@ I used a simple Image Optimiser provided to us by the package next-on-netlify wh
 Finally, I implemented the last option considering the webpage rendering speed!
             </span>
         </styled.Description>
+       
       </styled.TextContainer>
       <styled.TextContainer>
         <styled.SubTitle>Lessons Learned</styled.SubTitle>
@@ -162,3 +174,5 @@ Finally, I implemented the last option considering the webpage rendering speed!
     </styled.Portfolio>
   );
 }
+}
+export default PortfolioContent;
