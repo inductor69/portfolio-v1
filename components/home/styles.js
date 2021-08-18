@@ -47,6 +47,7 @@ export const LinkWrapper = styled.div`
   margin-top: 2rem;
 `;
 
+
 export const NavLink = styled.a`
   background: ${({ theme }) => theme.aboutLine};
   color: ${({ theme }) => theme.secondary};
@@ -54,8 +55,13 @@ export const NavLink = styled.a`
   border-radius: 0.5rem;
   border: 2px solid ${({ theme }) => theme.secondary};
   padding: 1.2rem 2rem;
-  font-size: 1.5rem;
+  
+display:flex;
+align-items: center;
+  font-size: 1.6rem;
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   margin-top: 1rem;
   display: flex;

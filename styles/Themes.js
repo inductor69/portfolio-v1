@@ -14,16 +14,16 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  primary: '#121212',
+  primary: '#1D1D20',
   secondary: '#FEFDFA',
-  line: '#FEFDFA',
-  grey: '#FEFDFA',
+  line: '#afafba',
+  grey: '#afafba',
   title: '#FEFDFA',
-  dropdownText: '#121212',
+  dropdownText: '#1D1D20',
   dropdownLine: '#FEFDFA',
   btnHover: '#FEFDFA',
-  aboutLine: '#121212',
+  aboutLine: '#1D1D20',
   arrow: '#FEFDFA',
-  aboutResume: '#FEFDFA',
-  projectText: '#FEFDFA',
+  aboutResume: '#afafba',
+  projectText: '#afafba',
 };

@@ -28,7 +28,7 @@ export default function Hero() {
         <p>
           I love spending hours and hours building things, resolving problems,
           and learning new technologies.
-          <span>Programming makes me a happy man😄</span>
+          <span>I help bring order to chaos and execute your ideas. Enabling you to launch, scale and grow your business with a thorough process and swift execution.</span>
         </p>
       </styled.Description>
      
@@ -43,7 +43,8 @@ export default function Hero() {
               }`}
               alt="github icon"
             ></styled.Icon>
-            <span>GitHub</span>
+            <span>
+              GitHub</span>
           </styled.NavLink>
           <styled.NavLink
             href="https://www.linkedin.com/in/aditya-kumar-b99b1519b/"

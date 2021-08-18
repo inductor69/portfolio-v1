@@ -83,10 +83,10 @@ export default function FinstryContent() {
         <styled.ImageContainer>
           <Sparkles>
           <Image
-            src="v1624633658/about/Removal-285_auto_x2_a5hcj0.png"
+            src="v1624633658/about/bulb_vw9yyx.png"
             alt="portfolio demo"
-            width={800}
-            height={720}
+            width={650}
+            height={620}
           />
           </Sparkles>
         </styled.ImageContainer>
