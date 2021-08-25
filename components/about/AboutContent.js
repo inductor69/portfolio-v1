@@ -242,7 +242,7 @@ export default function AboutContent() {
               </styled.Button>
               
               <styled.Button>
-                <a href="./docs/resume.pdf">
+                <a href="https://drive.google.com/file/d/1B6y0zHE4q9WVQXVVDDPKXEjTIfGRm9Cx/view?usp=sharing">
              
                   
                   <button className="learn-more">
