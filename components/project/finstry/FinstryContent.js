@@ -25,7 +25,7 @@ export default function FinstryContent() {
                 <span className="arrow">▹</span>React
               </td>
               <td>
-                <a target="_blank" href="https://finstry.vercel.app">
+                <a target="_blank" href="https://finstry.in">
                   <span className="link">Site</span>
                 </a>
               </td>

@@ -24,7 +24,7 @@ export default function Hero() {
           Hi! 
         </h1>
         <h1>I'm Aditya K.</h1>
-        <h1> <span> A full-stack developer.</span></h1>
+        <h1> <span> Developer/ Creator/ Finance</span></h1>
         <p>
           I love spending hours and hours building things, resolving problems,
           and learning new technologies.
